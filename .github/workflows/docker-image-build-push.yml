@@ -1,0 +1,20 @@
+name: build and push to ACR iamarund.azurecr.io
+
+on:
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    env:
+      IMAGE_NAME: todo-ui
+      IMAGE_TAG: v1
+      ACR_NAME: iamarund
+      ACR_LOGIN_SERVER: iamarund.azurecr.io
+    steps:
+    - name: checkout code
+      uses: actions/checkout@v4
