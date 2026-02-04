@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: todo-ui
-        image: iamarund.azurecr.io/todo-ui:v1
+        image: iamarund.azurecr.io/todo-ui:v2
         ports:
         - containerPort: 80
 
