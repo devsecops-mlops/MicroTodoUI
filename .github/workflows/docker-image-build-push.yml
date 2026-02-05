@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       IMAGE_NAME: todo-ui
-      IMAGE_TAG: v2
+      IMAGE_TAG: v3
       ACR_NAME: iamarund
       ACR_LOGIN_SERVER: iamarund.azurecr.io
     steps:
